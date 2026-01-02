@@ -15,6 +15,9 @@ termux-releases/
 │   │   └── com.termux_117.apk (82M)
 │   └── Termux_118/
 │       └── com.termux_118.apk (98M)
+├── CHANGELOG.md
+├── CHECKSUMS.md
+├── CONTRIBUTING.md
 ├── Termux (text file)
 ├── README.md
 └── REQUIREMENTS.md
@@ -26,6 +29,10 @@ termux-releases/
 |---------|-----------|----------|
 | 0.117 | 82 MB | `Releases/Termux_117/com.termux_117.apk` |
 | 0.118 | 98 MB | `Releases/Termux_118/com.termux_118.apk` |
+
+### Verifying Downloads
+
+For security, always verify the integrity of downloaded APK files using SHA256 checksums. See [CHECKSUMS.md](CHECKSUMS.md) for verification instructions and checksums for all releases.
 
 ## Download Instructions
 
@@ -132,10 +139,14 @@ pkg search <keyword>
 - [Termux GitHub Repository](https://github.com/termux/termux-app)
 - [Termux Community](https://gitter.im/termux/termux)
 - [Package List](https://github.com/termux/termux-packages)
+- [CHANGELOG.md](CHANGELOG.md) - Release notes and version history
+- [CHECKSUMS.md](CHECKSUMS.md) - SHA256 checksums for security verification
 
 ## Contributing
 
-This is an archive repository for Termux releases. For contributing to Termux development, please visit the [official Termux repository](https://github.com/termux/termux-app).
+Interested in contributing to this archive? Check out [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new releases or improving documentation.
+
+For contributing to Termux development itself, please visit the [official Termux repository](https://github.com/termux/termux-app).
 
 ## License
 
