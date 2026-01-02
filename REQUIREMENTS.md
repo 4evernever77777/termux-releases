@@ -89,7 +89,7 @@ This document outlines the system requirements and prerequisites for installing 
 
 Termux generally works on most Android devices that meet the minimum requirements, including:
 - Standard Android smartphones and tablets
-- Chromebooks with Android app support (Play Store)
+- Chromebooks with Android app sideloading capability
 - Android emulators (with limitations)
 
 ### Known Limitations
@@ -111,7 +111,7 @@ Termux generally works on most Android devices that meet the minimum requirement
 ### Before Installation
 
 1. **Verify APK Source**: Ensure you're downloading from a trusted source
-2. **Check SHA256 Checksums**: Verify file integrity (if checksums are provided)
+2. **Be Cautious with Downloads**: Verify file integrity before installation
 3. **Scan for Malware**: Optional but recommended using Android security tools
 
 ### After Installation
@@ -159,7 +159,7 @@ When launching Termux for the first time:
 
 For more detailed information:
 - [Official Termux Wiki](https://wiki.termux.com/)
-- [Termux GitHub Issues](https://github.com/termux/termux-app/issues)
+- [Termux GitHub Repository](https://github.com/termux/termux-app)
 - [Android Version History](https://en.wikipedia.org/wiki/Android_version_history)
 
 ## Disclaimer
