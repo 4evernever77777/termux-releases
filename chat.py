@@ -99,9 +99,9 @@ class DeepSeekChat:
                 return f"Error {response.status_code}: {response.text}"
                 
         except requests.exceptions.Timeout:
-            return "Error: Request timed out. Please try again."
+            return f"Error: Request timed out after {self.DEFAULT_TIMEOUT} seconds. Try checking your network stability or the API may be experiencing high load."
         except requests.exceptions.ConnectionError:
-            return "Error: Cannot connect to API. Check your internet connection."
+            return "Error: Cannot connect to API. Check your internet connection and ensure api.deepseek.com is accessible."
         except Exception as e:
             return f"Error: {str(e)}"
     

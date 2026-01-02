@@ -1,4 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
+# Note: This shebang path is required for Termux on Android
+# Do not change to #!/usr/bin/env bash as Termux uses a non-standard path
 
 # DeepSeek Installation Script for Termux
 # This script installs DeepSeek AI model and its dependencies on Android via Termux
