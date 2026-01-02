@@ -24,7 +24,7 @@ Get-FileHash -Algorithm SHA256 com.termux_*.apk
 ```
 
 **File**: `Releases/Termux_118/com.termux_118.apk`  
-**Size**: 98 MB  
+**Size**: 97.03 MB (101,739,523 bytes)  
 **SHA256**: `822ac152bd7c2d9770b87c1feea03f22f2349a91b94481b268c739493a260f0b`
 
 ### Termux Version 0.117
@@ -33,7 +33,7 @@ Get-FileHash -Algorithm SHA256 com.termux_*.apk
 ```
 
 **File**: `Releases/Termux_117/com.termux_117.apk`  
-**Size**: 82 MB  
+**Size**: 81.78 MB (85,749,239 bytes)  
 **SHA256**: `956f5945dd616206b1f226c54b1908110a1e8e2e759ba71c6f888577fa739993`
 
 ---
