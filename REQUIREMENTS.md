@@ -6,13 +6,14 @@ This document outlines the system requirements and prerequisites for installing 
 
 ### Minimum Android Version
 
-- **Android 7.0 (Nougat, API Level 24) or higher**
-  - Termux 0.117 and 0.118 require Android 7.0+
-  - For older Android versions (5.0-6.0), you'll need earlier Termux releases not included in this repository
+**Android 7.0 (Nougat, API Level 24) or higher**
+
+- Termux 0.117 and 0.118 require Android 7.0+
+- For older Android versions (5.0-6.0), you'll need earlier Termux releases not included in this repository
 
 ### Recommended Android Version
 
-- **Android 8.0 (Oreo) or higher** for optimal performance and feature support
+**Android 8.0 (Oreo) or higher** for optimal performance and feature support
 
 ## Hardware Requirements
 
@@ -148,12 +149,10 @@ When launching Termux for the first time:
 
 ### Termux 0.117
 - File size: 82 MB
-- Release date: Check official Termux repository for details
 - Features: Standard Termux features for Android 7.0+
 
 ### Termux 0.118
 - File size: 98 MB
-- Release date: Check official Termux repository for details
 - Features: Updated packages and improvements over 0.117
 
 ## Additional Resources
