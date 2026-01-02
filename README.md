@@ -16,7 +16,8 @@ termux-releases/
 │   └── Termux_118/
 │       └── com.termux_118.apk (98M)
 ├── Termux (text file)
-└── README.md
+├── README.md
+└── REQUIREMENTS.md
 ```
 
 ## Available Versions
@@ -56,6 +57,8 @@ You can download the APK files directly using these links (or use the correspond
 ## Installation Instructions
 
 ### Prerequisites
+
+📋 **For detailed system requirements, see [REQUIREMENTS.md](./REQUIREMENTS.md)**
 
 Before installing Termux, you need to enable installation from unknown sources on your Android device:
 
