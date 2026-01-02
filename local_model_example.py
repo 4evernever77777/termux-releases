@@ -7,6 +7,19 @@ This script demonstrates how to use DeepSeek models locally on Termux
 import sys
 import os
 
+# Configuration constants
+MODEL_OPTIONS = {
+    "lightweight": "deepseek-ai/deepseek-coder-1.3b-base",
+    "medium": "deepseek-ai/deepseek-coder-6.7b-base"
+}
+DEFAULT_MODEL = MODEL_OPTIONS["lightweight"]
+
+# Generation parameters
+MAX_LENGTH_EXAMPLE = 150
+MAX_LENGTH_INTERACTIVE = 200
+TEMPERATURE = 0.7
+TOP_P = 0.95
+
 def check_dependencies():
     """Check if required packages are installed"""
     missing = []
@@ -46,12 +59,12 @@ def main():
     print()
     print("Note: First run will download the model (may take significant time)")
     print("Recommended models for mobile devices:")
-    print("  1. deepseek-ai/deepseek-coder-1.3b-base (Lightweight)")
-    print("  2. deepseek-ai/deepseek-coder-6.7b-base (Medium, needs 8GB+ RAM)")
+    print(f"  1. {MODEL_OPTIONS['lightweight']} (Lightweight)")
+    print(f"  2. {MODEL_OPTIONS['medium']} (Medium, needs 8GB+ RAM)")
     print()
     
     # Use lightweight model by default
-    model_name = "deepseek-ai/deepseek-coder-1.3b-base"
+    model_name = DEFAULT_MODEL
     
     print(f"Model: {model_name}")
     print()
@@ -98,10 +111,10 @@ def main():
         with torch.no_grad():
             outputs = model.generate(
                 **inputs,
-                max_length=150,
-                temperature=0.7,
+                max_length=MAX_LENGTH_EXAMPLE,
+                temperature=TEMPERATURE,
                 do_sample=True,
-                top_p=0.95,
+                top_p=TOP_P,
                 pad_token_id=tokenizer.eos_token_id
             )
         
@@ -132,10 +145,10 @@ def main():
                 with torch.no_grad():
                     outputs = model.generate(
                         **inputs,
-                        max_length=200,
-                        temperature=0.7,
+                        max_length=MAX_LENGTH_INTERACTIVE,
+                        temperature=TEMPERATURE,
                         do_sample=True,
-                        top_p=0.95,
+                        top_p=TOP_P,
                         pad_token_id=tokenizer.eos_token_id
                     )
                 

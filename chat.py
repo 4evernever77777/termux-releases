@@ -36,6 +36,11 @@ def print_help():
     print()
 
 class DeepSeekChat:
+    # Configuration constants
+    DEFAULT_TIMEOUT = 30  # seconds
+    MAX_HISTORY_MESSAGES = 20  # Maximum number of messages to keep in history
+    DEFAULT_TEMPERATURE = 0.7
+    
     def __init__(self):
         self.api_key = os.environ.get('DEEPSEEK_API_KEY')
         self.api_url = "https://api.deepseek.com/v1/chat/completions"
@@ -71,11 +76,11 @@ class DeepSeekChat:
             "model": self.model,
             "messages": messages,
             "stream": stream,
-            "temperature": 0.7
+            "temperature": self.DEFAULT_TEMPERATURE
         }
         
         try:
-            response = requests.post(self.api_url, headers=headers, json=data, timeout=30)
+            response = requests.post(self.api_url, headers=headers, json=data, timeout=self.DEFAULT_TIMEOUT)
             
             if response.status_code == 200:
                 result = response.json()
@@ -85,9 +90,9 @@ class DeepSeekChat:
                 self.conversation_history.append({"role": "user", "content": message})
                 self.conversation_history.append({"role": "assistant", "content": assistant_message})
                 
-                # Keep only last 10 exchanges to avoid token limits
-                if len(self.conversation_history) > 20:
-                    self.conversation_history = self.conversation_history[-20:]
+                # Keep only last N exchanges to avoid token limits
+                if len(self.conversation_history) > self.MAX_HISTORY_MESSAGES:
+                    self.conversation_history = self.conversation_history[-self.MAX_HISTORY_MESSAGES:]
                 
                 return assistant_message
             else:
