@@ -6,18 +6,18 @@ All notable changes to Termux releases archived in this repository are documente
 
 ### Release Information
 - **File**: `Releases/Termux_118/com.termux_118.apk`
-- **Size**: 98 MB
+- **Size**: 97.03 MB (101,739,523 bytes)
 - **Minimum Android Version**: Android 7.0 (API 24)
 
 ### Changes
-- Updated application size (98 MB vs 82 MB in v0.117)
+- Updated application size (97.03 MB vs 81.78 MB in v0.117)
 - Latest stable release available in this archive
 
 ## [0.117] - Termux Version 117
 
 ### Release Information
 - **File**: `Releases/Termux_117/com.termux_117.apk`
-- **Size**: 82 MB
+- **Size**: 81.78 MB (85,749,239 bytes)
 - **Minimum Android Version**: Android 7.0 (API 24)
 
 ### Changes
