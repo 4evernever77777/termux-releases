@@ -15,7 +15,8 @@ termux-releases/
 │   │   └── com.termux_117.apk (82M)
 │   └── Termux_118/
 │       └── com.termux_118.apk (98M)
-└── Termux
+├── Termux (text file)
+└── README.md
 ```
 
 ## Available Versions
@@ -37,16 +38,20 @@ termux-releases/
 ### Option 2: Using Git Clone
 
 ```bash
+# Clone this repository
 git clone https://github.com/4evernever77777/termux-releases.git
 cd termux-releases/Releases
+
+# Or if you forked this repo, use your username instead
+# git clone https://github.com/YOUR_USERNAME/termux-releases.git
 ```
 
 ### Option 3: Direct Download Links
 
-You can download the APK files directly using these links:
+You can download the APK files directly using these links (or use the corresponding links from your fork):
 
-- **Termux 0.117**: [Download](https://github.com/4evernever77777/termux-releases/raw/main/Releases/Termux_117/com.termux_117.apk)
-- **Termux 0.118**: [Download](https://github.com/4evernever77777/termux-releases/raw/main/Releases/Termux_118/com.termux_118.apk)
+- **Termux 0.117**: [com.termux_117.apk](https://github.com/4evernever77777/termux-releases/raw/main/Releases/Termux_117/com.termux_117.apk)
+- **Termux 0.118**: [com.termux_118.apk](https://github.com/4evernever77777/termux-releases/raw/main/Releases/Termux_118/com.termux_118.apk)
 
 ## Installation Instructions
 
